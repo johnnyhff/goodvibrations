@@ -45,6 +45,7 @@ h2 {
 /* Estilo para tornar a página mais legível */
 body {
     font-family: Arial, sans-serif;
+    display: flex;
 }
 
 
