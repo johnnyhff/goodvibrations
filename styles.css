@@ -28,7 +28,8 @@ nav {
 }
 
 .menu a:hover {
-    color: white;
+    color: purple;
+text-shadow: 2px 2px black;
 }
 
 /* Estilo das seções */
