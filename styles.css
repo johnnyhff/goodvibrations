@@ -1,4 +1,27 @@
-﻿/* Resetando margens e padding */
+/* celular (padrão) */
+body {
+  font-size: 16px;
+	    font-family: Arial, sans-serif;
+    display: flex;
+background-color: black;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+
+/* Resetando margens e padding */
 * {
     margin: 0;
     padding: 0;
@@ -43,12 +66,8 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Estilo para tornar a página mais legível */
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-background-color: black;
-}
+
+
 
 
 
@@ -108,4 +127,5 @@ transform: translateY(-6px);
         color: white;
     }
 	
+
 	
