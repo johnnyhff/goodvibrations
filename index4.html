@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Johnny Hoff">
+    <meta name="description" content="O programa que te leva ao centro do universo">
+    <title>Good Vibrations</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="favicon.png" type="image/x-icon"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <style>
+    
+    .h1{
+        color:#fff;
+    }
+ 
+        .vitrine-titulo {
+            text-align: center;
+            padding: 2rem 1rem 1rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 0.02em;
+        }
+ 
+        .vitrine {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 12px;
+            padding: 1rem 1rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+ 
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+ 
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+ 
+        .card-imagem {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #ececec;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+ 
+        .card-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+ 
+        .card-imagem svg {
+            opacity: 0.3;
+            width: 40px;
+            height: 40px;
+        }
+ 
+        .card-info {
+            padding: 10px 12px 12px;
+        }
+ 
+        .card-nome {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+ 
+        .card-preco {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #111;
+        }
+ 
+        .card-preco .cifrao {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #555;
+            vertical-align: top;
+            margin-top: 2px;
+            display: inline-block;
+        }
+ 
+
+ .navbar {
+    background: rgba(148, 0, 211, 0.85); /* #9400D3 com transparência */
+    backdrop-filter: blur(10px); /* Efeito vidro */
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebrar linha no celular */
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover, .menu a.active {
+    color: #ff26be;
+    background: rgba(255, 255, 255, 0.1);
+    text-shadow: 0px 0px 8px rgba(255, 38, 190, 0.6);
+    </style>
+
+
+</head>
+
+
+<body>
+
+</body>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="index.html" >Início</a></li>
+            <li><a href="index2.html">Serviços</a></li>
+            <li><a href="index3.html">Instagram</a></li>
+            <li><a href="index4.html"class="active">Loja</a></li>
+        </ul>
+    </nav>
+
+
+     <h1 class="vitrine-titulo">Loja</h1>
+     <p>Não nos responsabilizamos por produtos de terceiros</p>
+ 
+    <div class="vitrine">
+ 
+      
+      
+<a href="https://go.hotmart.com/E106259857A?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://static-media.hotmart.com/kosq_hJzxNfzsbY-Yo4uWOrinko=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/d864c33d-eb94-4474-944c-051e3e5af88f/Inserirumttulo.png?w=920" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">Curso English <br> Together</p>
+            <p class="card-preco">R$ 1.069,00 (12x 89,08)</p>
+        </div>
+    </div>
+</a>
+ 
+
+
+
+   <a href="https://go.hotmart.com/V106259997S?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://static-media.hotmart.com/gKyGHfexYZJM2EdU0Fg3DryHLEw=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/2a090956-af14-4129-94a8-e7e0030bf6b9/ChatGPTImage22_05_202603_24_26.png?w=920" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">Eletrônica Do Zero</p>
+            <p class="card-preco">R$ 324,00 (12x 33,51)</p>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+ 
+<a href="https://go.hotmart.com/B106259905E?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://static-media.hotmart.com/LDYOtrJoZTpX-uan-v-Rc4SLb8M=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/913b9af8-4ce9-47cd-8904-48295d28efc7/59e56f3e7c1f4abbb701c1c388a48224.jpg?w=920g" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">Você Falando <br> Espanhol</p>
+            <p class="card-preco">R$ 97,90 (12x 10,13)</p>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+
+ 
+<a href="https://go.hotmart.com/T106260788Q?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://static-media.hotmart.com/8fp875VSmZ-WnWyreYXam3gaZjE=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/4dc02c6d-79bb-40c2-9bca-41b0e892c62b/logo_3_elementos_1080_1080.png?w=920" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">HTML, CSS e <br> JavaScript</p>
+            <p class="card-preco">R$ 297,00 (10x 29,70)</p>
+        </div>
+    </div>
+</a>
+ 
+
+
+
+
+
+
+
+
+ <a href="https://go.hotmart.com/P106260775O?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://static-media.hotmart.com/4x9euVR3EBGqdJjvy9HbSUceLuM=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/c9d01b3a-8079-40ee-8660-0767b5bdf90c/DockerCursoCompleto.jpg?w=920" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">Docker</p>
+            <p class="card-preco">R$ 200,00
+</p>
+        </div>
+    </div>
+</a>
+ 
+
+
+
+
+
+
+
+<a href="https://go.hotmart.com/C106260798D?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://static-media.hotmart.com/PEjhxiEBf0YfSXEiXUIofJyJE_U=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/be253c33-e8ff-4349-9cfd-d6b3af6f9e6e/gitcomgithub.png?w=920" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">Git e Github</p>
+            <p class="card-preco">R$ 197,00 (12x 20,37)</p>
+        </div>
+    </div>
+</a>
+ 
+
+
+
+
+
+
+
+
+<a href="https://go.hotmart.com/B106260670U?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://imgs.search.brave.com/yA8Tg3CCe5RWJ1K4Tjbf5o3v93YhTRaPf1S-51MxQKI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzgvMS9saW51eC10/dXgtbG9nby1wbmdf/c2Vla2xvZ28tODQ1/MTAucG5n" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">Linux Do Básico <br> Ao Avançado</p>
+            <p class="card-preco">R$ 149,90 (12x de R$ 15,50)</p>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+
+
+<a href="https://go.hotmart.com/H106260659T?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://static-media.hotmart.com/KRymO7W3irvmRIh5BKpXRmLvFXs=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/cb134947-3012-4f21-b9a6-8fac149e69b8/62.jpg?w=920" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">Mídias Sociais</p>
+            <p class="card-preco">R$ 500,00</p>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+
+
+
+ <a href="https://go.hotmart.com/W106260661N?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://static-media.hotmart.com/ny_3eFmpw_5syYgWlevGJA_Jf9A=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/94b22d3a-6675-4ec3-b13a-dc872190c9cf/2651.jpg?w=920" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">Hotelaria e Turismo</p>
+            <p class="card-preco">R$ 500,00</p>
+        </div>
+    </div>
+</a>
+
+        
+     
+
+
+
+
+
+ 
+<a href="https://go.hotmart.com/G106260801N?dp=1" target="_blank" class="card-link">
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://static-media.hotmart.com/QJ1HdM7u-_Pt1-BQh-Cm2wC5Noc=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/b01ed52a-e42f-4767-b369-381c318e3e3e/SemTtulo1.png?w=920" alt="Produto">
+        </div>
+
+        <div class="card-info">
+            <p class="card-nome">Criação De Jogos <br> Com Roblox <br> Studio</p>
+            <p class="card-preco">R$ 99,90 (12x 8,32) </p>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+
+
+ 
+    </div>
+
+
+</html>
