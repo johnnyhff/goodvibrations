@@ -8,7 +8,8 @@
 }
 
 a {
-    color: #ff26be;
+color: #ff26be;
+
 }
 
 body {
@@ -66,28 +67,23 @@ body {
 /* CONTEÚDO PRINCIPAL            */
 /* ============================= */
 .container-principal {
-    width: 100%; /* Garante que use o espaço disponível */
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
     text-align: center;
     flex: 1; /* Ocupa o espaço restante empurrando a dock pra baixo */
-}
+    }
 
-.playlist {
-    width: 100%;
+    .playlist {
     max-width: 1000px;
-    margin: 10px auto;
+    margin: 10px;
     padding: 20px;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Padrão coluna para mobile (mudará no desktop se necessário) */
-    align-items: center;
-}
+       }
 
 .logo-img {
-    width: 100%; /* Torna a imagem responsiva */
-    max-width: 700px; /* Não passa do tamanho original */
+    width: 700px;
     height: auto;
     margin-bottom: 30px;
     border-radius: 15px;
@@ -96,7 +92,7 @@ body {
 }
 
 .logo-img:hover {
-    transform: scale(1.05); /* Reduzi levemente para não quebrar a tela no hover */
+    transform: scale(1.10);
 }
 
 .conteudo-texto p {
@@ -119,7 +115,6 @@ body {
     display: flex;
     justify-content: center;
     pointer-events: none; /* Evita bloquear cliques fora da dock */
-    z-index: 2000; /* Garante que fique acima de tudo */
 }
 
 .mac-dock {
@@ -151,63 +146,9 @@ body {
 
 /* Animação de Zoom (Efeito macOS) */
 .dock-item:hover {
-    transform: scale(1.4) translateY(-10px); /* Reduzido o scale para evitar bugs em telas menores */
+    transform: scale(1.6) translateY(-10px);
     background: #ff26be;
     box-shadow: 0 10px 20px rgba(255, 38, 190, 0.4);
     z-index: 10;
-    margin: 0 10px;
-}
-
-/* ============================= */
-/* ADAPTAÇÃO PARA SMARTPHONES    */
-/* ============================= */
-@media (max-width: 768px) {
-    .menu {
-        gap: 10px; /* Diminui o espaçamento dos botões do menu */
-    }
-    
-    .menu a {
-        font-size: 0.95rem; /* Diminui o texto do menu para caber lado a lado ou quebrar melhor */
-        padding: 6px 12px;
-    }
-
-    .container-principal {
-        margin: 20px auto;
-        padding: 15px;
-    }
-
-    .playlist {
-        flex-direction: column; /* Garante que os itens da playlist fiquem um embaixo do outro */
-        padding: 10px;
-    }
-
-    .conteudo-texto p {
-        padding: 20px; /* Reduz o padding interno do texto para sobrar espaço pra leitura */
-        font-size: 1.05rem;
-    }
-
-    /* Ajuste da Dock para não cobrir o conteúdo e caber na tela do celular */
-    .mac-dock-container {
-        bottom: 10px;
-    }
-
-    .mac-dock {
-        gap: 10px;
-        padding: 8px 12px;
-        max-width: 90%; /* Não deixa a dock estourar as bordas físicas do celular */
-        overflow-x: auto; /* Caso você adicione muitos itens, ela vira um scrollzinho horizontal suave */
-    }
-
-    .dock-item {
-        font-size: 22px; /* Ícones ligeiramente menores */
-        width: 42px;
-        height: 42px;
-    }
-
-    /* Em telas de toque (touch), o efeito hover gigante pode ser incômodo, 
-       então suavizamos o comportamento para mobile */
-    .dock-item:hover {
-        transform: scale(1.2) translateY(-5px);
-        margin: 0 5px;
-    }
+    margin: 0 15px; /* Empurra os ícones vizinhos para o lado */
 }
