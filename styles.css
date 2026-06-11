@@ -157,3 +157,53 @@ body {
     z-index: 10;
     margin: 0 12px; /* Empurra os ícones vizinhos para o lado */
 }
+
+/* ============================= */
+/* ADAPTAÇÃO PARA SMARTPHONES    */
+/* ============================= */
+@media (max-width: 768px) {
+    /* Ajustes na Navbar */
+    .menu {
+        gap: 10px; /* Reduz espaço entre os links */
+    }
+    
+    .menu a {
+        font-size: 1rem; /* Fonte ligeiramente menor para caber melhor lado a lado */
+        padding: 5px 8px;
+    }
+
+    /* Ajustes do Conteúdo Geral */
+    .container-principal {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .conteudo-texto p {
+        padding: 20px 15px; /* Reduz padding horizontal salvando espaço de tela no celular */
+        font-size: 1.1rem;
+    }
+
+    /* Otimizações da Mac Dock para Telas Touch */
+    .mac-dock-container {
+        bottom: 10px; /* Mais próximo do rodapé */
+    }
+
+    .mac-dock {
+        gap: 10px;
+        padding: 8px 12px;
+        max-width: 95%; /* Garante que a dock não passe das bordas físicas da tela */
+    }
+
+    .dock-item {
+        width: 44px;  /* Ícones sutilmente menores e proporcionais */
+        height: 44px;
+        font-size: 22px;
+    }
+
+    /* Em smartphones o efeito de hover exagerado pode quebrar a tela ou travar 
+       quando o usuário tira o dedo, por isso suavizamos o zoom no toque */
+    .dock-item:hover {
+        transform: scale(1.2) translateY(-5px);
+        margin: 0 5px;
+    }
+}
