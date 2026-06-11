@@ -8,8 +8,7 @@
 }
 
 a {
-color: #ff26be;
-
+    color: #ff26be;
 }
 
 body {
@@ -67,23 +66,28 @@ body {
 /* CONTEÚDO PRINCIPAL            */
 /* ============================= */
 .container-principal {
+    width: 100%;
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
     text-align: center;
     flex: 1; /* Ocupa o espaço restante empurrando a dock pra baixo */
-    }
+}
 
-    .playlist {
+.playlist {
+    width: 100%;
     max-width: 1000px;
-    margin: 10px;
+    margin: 10px auto;
     padding: 20px;
     text-align: center;
     display: flex;
-       }
+    flex-direction: column; /* Alinha os itens da playlist verticalmente por segurança */
+    align-items: center;
+}
 
 .logo-img {
-    width: 700px;
+    width: 100%; /* CORRIGIDO: Ocupa o espaço disponível sem estourar */
+    max-width: 700px; /* CORRIGIDO: Mantém o limite máximo de 700px em telas grandes */
     height: auto;
     margin-bottom: 30px;
     border-radius: 15px;
@@ -92,7 +96,7 @@ body {
 }
 
 .logo-img:hover {
-    transform: scale(1.10);
+    transform: scale(1.05); /* Suavizado para não cortar nas bordas do navegador */
 }
 
 .conteudo-texto p {
@@ -115,6 +119,7 @@ body {
     display: flex;
     justify-content: center;
     pointer-events: none; /* Evita bloquear cliques fora da dock */
+    z-index: 2000;
 }
 
 .mac-dock {
@@ -146,9 +151,9 @@ body {
 
 /* Animação de Zoom (Efeito macOS) */
 .dock-item:hover {
-    transform: scale(1.6) translateY(-10px);
+    transform: scale(1.5) translateY(-10px); /* Ajustado levemente para melhor estabilidade */
     background: #ff26be;
     box-shadow: 0 10px 20px rgba(255, 38, 190, 0.4);
     z-index: 10;
-    margin: 0 15px; /* Empurra os ícones vizinhos para o lado */
+    margin: 0 12px; /* Empurra os ícones vizinhos para o lado */
 }
